@@ -2,6 +2,8 @@
 
 Web Component to implement a tabs interface. Based on LitElement
 
+Go to [DEMOS page](https://dile-tabs.polydile.com/)
+
 ## Installation
 
 ```bash
