@@ -5,7 +5,7 @@ export class DileTabs extends LitElement {
   static get styles() {
     return css`
       :host {
-        display: block;
+        display: flex;
       }
     `;
   }
