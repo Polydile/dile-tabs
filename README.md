@@ -52,7 +52,7 @@ The next example show how to use the attrForSelected property
   <dile-tab name="faq">FAQ</dile-tab>
   <dile-tab name="contact">Contact</dile-tab>
 </dile-tabs>
-´´´
+```
 
 ## Events
 
