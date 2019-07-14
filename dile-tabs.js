@@ -59,7 +59,6 @@ export class DileTabs extends LitElement {
     } else {
       // Selected by attribute
       for (let tab of this.tabs) {
-        console.log(this.attrForSelected, tab[this.attrForSelected]);
         if(tab.getAttribute(this.attrForSelected) == this.selected) {
           tab.selected = true;
         } else {
@@ -81,8 +80,6 @@ export class DileTabs extends LitElement {
   }
 
   updated(changedProperties) {
-    console.log('updated', changedProperties);
-    console.log('selected actual', this.selected);
     if(changedProperties.has('selected')) {
       this.dispatchEvent(new CustomEvent('dile-tabs-selected-changed', {
         bubbles: true,
