@@ -84,7 +84,7 @@ export class DileTabs extends LitElement {
     console.log('updated', changedProperties);
     console.log('selected actual', this.selected);
     if(changedProperties.has('selected')) {
-      this.dispatchEvent(new CustomEvent('dile-tabs-selected-change', {
+      this.dispatchEvent(new CustomEvent('dile-tabs-selected-changed', {
         bubbles: true,
         composed: true,
         detail: this.selected

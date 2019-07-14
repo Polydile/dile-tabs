@@ -56,9 +56,9 @@ The next example show how to use the attrForSelected property
 
 ## Events
 
-### dile-tabs-selected-change:
+### dile-tabs-selected-changed:
 
-Every time ```selected``` property changes the ```<dile-tabs>``` component dispatch the ```dile-tabs-selected-change``` custom event. You will recive the new selected value in the ```detail``` event object property.
+Every time ```selected``` property changes the ```<dile-tabs>``` component dispatch the ```dile-tabs-selected-changed``` custom event. You will recive the new selected value in the ```detail``` event object property.
 
 ## CSS custom properties
 
