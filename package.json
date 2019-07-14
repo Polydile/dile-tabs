@@ -1,0 +1,32 @@
+{
+  "name": "dile-tabs",
+  "version": "1.0.0",
+  "description": "Webcomponent dile-tabs following open-wc recommendations",
+  "author": "@midesweb",
+  "homepage": "https://github.com/Polydile/dile-tabs",
+  "license": "MIT",
+  "repository": "https://github.com/Polydile/dile-tabs.git",
+  "scripts": {
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "start:compatibility": "es-dev-server --app-index demo/index.html --compatibility all --node-resolve --open --watch",
+    "site:build": "npm run storybook:build",
+    "storybook": "start-storybook -p 9001",
+    "storybook:build": "build-storybook -o _site -s storybook-static"
+  },
+  "dependencies": {
+    "lit-html": "^1.0.0",
+    "lit-element": "^2.0.1"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.5.0",
+    "@open-wc/demoing-storybook": "^0.2.0"
+  },
+  "keywords": [
+    "Web Component",
+    "Tab",
+    "Tabs",
+    "UI",
+    "Javascript",
+    "LitElement"
+  ]
+}
