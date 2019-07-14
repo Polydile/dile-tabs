@@ -14,6 +14,7 @@ class DileTab  extends LitElement {
         transition: all 0.3s ease;
         color: var(--dile-tab-text-color, #666);
         background-color: var(--dile-tab-background-color, transparent);
+        cursor: pointer;
       }
       div.label {
         padding: var(--dile-label-padding, 8px 12px 6px 12px);
