@@ -44,7 +44,7 @@ This property tells the ```<dile-tabs>``` component which attribute need to matc
 
 The next example show how to use the attrForSelected property
 
-```
+```html
 <dile-tabs selected="posts" attrForSelected="name">
   <dile-tab name="users">Users</dile-tab>
   <dile-tab name="posts">Posts</dile-tab>
