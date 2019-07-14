@@ -6,7 +6,7 @@ class DileTab  extends LitElement {
     return css`
       :host {
         display: inline-block;
-        margin: 3px;
+        margin: 0 3px;
       }
       article {
         border-top-left-radius: 4px;
