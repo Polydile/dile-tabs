@@ -52,4 +52,43 @@ storiesOf('dile-tabs', module)
       <p id="msg2"></p>
       `,
   )
+  .add(
+    'Interoperability',
+    () => html`
+      <style>
+      p {
+        margin: 10px;
+      }
+      </style>
+      <dile-tabs @dile-tabs-selected-change="${
+        (e) => {
+          document.getElementById('msg3').innerText = `Selected: ${e.detail}`;
+        }
+      }
+      " selected="posts" attrForSelected="name" id="tabs">
+        <dile-tab name="users">Users</dile-tab>
+        <dile-tab name="posts">Posts</dile-tab>
+        <dile-tab name="articles">Articles</dile-tab>
+        <dile-tab name="faq">FAQ</dile-tab>
+        <dile-tab name="contact">Contact</dile-tab>
+      </dile-tabs>
+      <p>
+        <select @change="${
+          (e) => {
+            let newValue = e.target.value;
+            if(newValue)
+            document.getElementById('tabs').selected = newValue;
+          }
+        }">
+          <option value="">Seleccionar una opción</option>
+          <option value="users">Users</option>
+          <option value="posts">Posts</option>
+          <option value="articles">Articles</option>
+          <option value="faq">FAQ</option>
+          <option value="contact">Contact</option>
+        </select>
+      </p>
+      <p id="msg3"></p>
+      `,
+  )
   .add('Documentation', () => withClassPropertiesKnobs(DileTabs), { notes: { markdown: readme } })

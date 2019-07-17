@@ -87,6 +87,7 @@ export class DileTabs extends LitElement {
         detail: this.selected
       }));
     }
+    this.setSelectedTab();
   }
 }
 
