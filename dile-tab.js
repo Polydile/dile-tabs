@@ -19,6 +19,7 @@ class DileTab  extends LitElement {
       div.label {
         padding: var(--dile-label-padding, 8px 12px 6px 12px);
         text-transform: uppercase;
+        white-space: nowrap;
       }
       .selected {
         background-color: var(--dile-tab-selected-background-color, #039be5);

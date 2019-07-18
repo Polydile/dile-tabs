@@ -31,7 +31,7 @@ render(html`
     <dile-tab name="posts">Posts</dile-tab>
     <dile-tab name="articles">Articles</dile-tab>
     <dile-tab name="faq">FAQ</dile-tab>
-    <dile-tab name="contact">Contact</dile-tab>
+    <dile-tab name="contact">Contact me</dile-tab>
   </dile-tabs>
   <p id="msg2"></p>
 `, document.querySelector('#demo'));
