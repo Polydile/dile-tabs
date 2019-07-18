@@ -76,17 +76,18 @@ export class DileTabs extends LitElement {
       // selected by attribute
       this.selected = e.detail.getAttribute(this.attrForSelected);
     }
-    this.setSelectedTab();
+    this.dispatchSelectedChanged();
   }
 
+  dispatchSelectedChanged() {
+    this.dispatchEvent(new CustomEvent('dile-tabs-selected-changed', {
+      bubbles: true,
+      composed: true,
+      detail: this.selected
+    }));
+  }
+  
   updated(changedProperties) {
-    if(changedProperties.has('selected')) {
-      this.dispatchEvent(new CustomEvent('dile-tabs-selected-changed', {
-        bubbles: true,
-        composed: true,
-        detail: this.selected
-      }));
-    }
     this.setSelectedTab();
   }
 }
