@@ -73,3 +73,8 @@ Custom property | Description | Default
 --dile-label-padding | Content padding of the tab | 8px 12px 6px 12px
 --dile-tab-selected-line-height | Defines selected tab line height | 5px
 --dile-tab-selected-line-color | Defines selected tab line color | #0070c0
+--dile-tab-border-radius | Tab top-left & top-right border radius | 4px
+--dile-tab-border | Unselected tab border | none
+--dile-tab-selected-border | Selected tab border | none
+--dile-tab-font-weight | Tab font weight | normal
+--dile-tab-text-transform | Tab text transform | uppercase

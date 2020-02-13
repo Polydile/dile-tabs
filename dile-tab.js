@@ -9,21 +9,24 @@ class DileTab  extends LitElement {
         margin: 0 3px;
       }
       article {
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
+        border-top-left-radius: var(--dile-tab-border-radius, 4px);
+        border-top-right-radius: var(--dile-tab-border-radius, 4px);
         transition: all 0.3s ease;
         color: var(--dile-tab-text-color, #666);
         background-color: var(--dile-tab-background-color, transparent);
         cursor: pointer;
+        border: var(--dile-tab-border, none);
+        font-weight: var(--dile-tab-font-weight, normal);
       }
       div.label {
         padding: var(--dile-label-padding, 8px 12px 6px 12px);
-        text-transform: uppercase;
+        text-transform: var(--dile-tab-text-transform, uppercase);
         white-space: nowrap;
       }
       .selected {
         background-color: var(--dile-tab-selected-background-color, #039be5);
         color: var(--dile-tab-selected-text-color, #fff);
+        border: var(--dile-tab-selected-border, none);
       }
       span {
         display: block;
