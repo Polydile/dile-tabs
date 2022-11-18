@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "es-dev-server": "^1.5.0",
-    "@open-wc/demoing-storybook": "^0.2.0"
+    "@open-wc/demoing-storybook": "^2.4.7"
   },
   "keywords": [
     "Web Component",
