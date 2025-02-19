@@ -1,3 +1,7 @@
+# Moved!
+
+**This package has moved** and is now available at [@dile/ui](https://github.com/Polydile/dile-components). Please update your dependencies. This repository is no longer maintained. You can read the documentation at [Dile Components](https://dile-components.com/).
+
 # \<dile-tabs>
 
 Web Component to implement a tabs interface. Based on LitElement
